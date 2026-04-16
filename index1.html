@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lake Issue Reporting</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>🌊 Lake Issue Reporting System</header>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('report')">Report</button>
+<button onclick="showPage('track')">Track</button>
+<button onclick="showPage('admin')">Admin</button>
+<button onclick="showPage('about')">About</button>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="container">
+<h2>Welcome to our Lake Issue Reporting System !!</h2>
+
+<p>
+We are here to support you in protecting and preserving our lakes and ponds. Clean water bodies are essential for nature, wildlife, and our daily lives. Unfortunately, many lakes are getting polluted due to waste, sewage, and human activities.
+</p>
+
+<p>
+With this platform, you can easily report any issues you notice—such as garbage dumping, dirty water, or harm to aquatic life. Your small action can make a big difference. Let’s work together to keep our lakes clean, safe, and healthy for future generations.
+</p>
+
+<p>
+👉 Report problems. Raise awareness. Be a part of the solution.
+</p>
+</div>
+
+<!-- REPORT -->
+<div id="report" class="container hidden">
+<h2>Report Issue</h2>
+
+<select id="type">
+<option>Water Pollution</option>
+<option>Sewage Contamination</option>
+<option>Plastic Waste Dumping</option>
+<option>Industrial Waste Discharge</option>
+<option>Agricultural Runoff</option>
+<option>Encroachment</option>
+<option>Oil/Grease Pollution</option>
+<option>Chemical Dumping</option>
+<option>Garbage Disposal in Lakes</option>
+<option>Overuse of Water (Water Extraction)</option>
+<option>Construction Near Lakes</option>
+<option>Religious Waste Dumping</option>
+<option>Washing Clothes/Vehicles in Lakes</option>
+<option>Drainage Waste Entry</option>
+</select>
+
+<textarea id="desc" placeholder="Describe the issue"></textarea>
+<input id="img" placeholder="Image URL (optional)">
+<input id="loc" placeholder="Location / Google Maps Link">
+
+<button class="submit" onclick="saveIssue()">Submit Issue</button>
+</div>
+
+<!-- TRACK -->
+<div id="track" class="container hidden">
+<h2>Track Issues</h2>
+<div id="issues"></div>
+</div>
+
+<!-- ADMIN -->
+<div id="admin" class="container hidden">
+<h2>Admin Panel</h2>
+<div id="adminIssues"></div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="container hidden">
+<h2>🔹 About the System</h2>
+
+<p>
+The Lake Issue Reporting System is a web-based platform that allows users to report problems related to lakes and ponds. It helps authorities monitor and manage issues efficiently.
+</p>
+
+<h3>🔹 Why This System is Designed</h3>
+<ul>
+<li>To solve the problem of increasing water pollution</li>
+<li>To create a direct communication channel between citizens and authorities</li>
+<li>To encourage public participation in environmental protection</li>
+</ul>
+
+<h3>🔹 How It is Useful</h3>
+<ul>
+<li>Easy reporting of lake-related issues</li>
+<li>Quick tracking and status updates</li>
+<li>Helps authorities take faster action</li>
+<li>Stores data for analysis and future planning</li>
+</ul>
+
+<h3>🔹 Effects of This System</h3>
+<ul>
+<li>Reduction in water pollution</li>
+<li>Improved lake cleanliness</li>
+<li>Better protection of aquatic biodiversity</li>
+<li>Increased awareness among people</li>
+</ul>
+
+<h3>🔹 Importance of the System</h3>
+<ul>
+<li>Protects natural water resources</li>
+<li>Supports ecosystem balance</li>
+<li>Ensures availability of clean water</li>
+<li>Promotes responsible citizen behavior</li>
+</ul>
+
+<h3>🔹 Need for the System</h3>
+<ul>
+<li>Many lake issues go unreported</li>
+<li>Lack of awareness among people</li>
+<li>Delay in action by authorities</li>
+<li>Need for a simple and accessible reporting platform</li>
+</ul>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
